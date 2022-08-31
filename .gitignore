@@ -24,4 +24,4 @@ dist-ssr
 *.sw?
 
 # npm package publish dir
-lib 
+lib
