@@ -21,7 +21,7 @@
   ],
   "browser": "./lib/dache.umd.js",
   "main": "./lib/dache.cjs.js",
-  "module": "./lib/dache.es.js",
+  "module": "./lib/dache.js",
   "types": "./lib/dache.d.ts",
   "devDependencies": {
     "jest": "^29.0.1",
