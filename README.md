@@ -15,7 +15,7 @@ yarn add @awey/dache
 ## Useage
 
 ```ts
-import Dache from 'dache'
+import Dache from '@awey/dache'
 
 const dache = new Dache('local', 'myDache')
 dache.set('username', 'Tom')
