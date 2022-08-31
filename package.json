@@ -1,7 +1,7 @@
 {
   "name": "@awey/dache",
   "description": "Use memory,session storagy or local storage to cache things",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": {
     "name": "Awey",
     "email": "bboyawey@sina.cn"
