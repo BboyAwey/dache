@@ -1,7 +1,6 @@
 {
   "name": "@awey/dache",
   "description": "Use memory,session storagy or local storage to cache things",
-  "private": "false",
   "version": "1.0.0",
   "author": {
     "name": "Awey",
