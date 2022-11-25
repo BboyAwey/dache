@@ -71,7 +71,7 @@ export default class Dache {
     return this.#name + '_' + key
   }
 
-  get (key: string) {
+  get <T> (key: string): T | null {
     const str = this.#storage.getItem(this.#prefix(key))
     if (typeof str !== 'string') {
       return null
@@ -86,7 +86,7 @@ export default class Dache {
       }
     } catch (err) {
       if (typeof str === 'string') {
-        return str
+        return str as T
       } else return null
     }
   }
