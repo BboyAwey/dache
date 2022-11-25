@@ -71,7 +71,7 @@ export default class Dache {
     return this.#name + '_' + key
   }
 
-  get <T> (key: string): T | null {
+  get <T = any> (key: string): T | null {
     const str = this.#storage.getItem(this.#prefix(key))
     if (typeof str !== 'string') {
       return null
