@@ -37,7 +37,6 @@ class MemoryStorage {
 }
 
 const memoryStorage = new MemoryStorage()
-const cacheNames = new Set<string>()
 
 export default class Dache {
   #type: TCacheType
@@ -47,13 +46,6 @@ export default class Dache {
   constructor (type: TCacheType, name: string) {
     this.#type = type
     this.#name = name
-
-    const cacheName = `_${this.#type}_${this.#name}`
-    if (cacheNames.has(cacheName)) {
-      console.warn(`Cache: duplicated ${this.#type} cache instance name "${name}".`)
-    } else {
-      cacheNames.add(cacheName)
-    }
 
     switch (this.#type) {
       case 'memory':
